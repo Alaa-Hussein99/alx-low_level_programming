@@ -1,23 +1,22 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: prints numbers of base 16
+ * Description: prints combination of numbers
  * Return: Always 0 (Success)
 */
 int main(void)
 {
 	int digit = 0;
-	char ch = 'a';
 
 	while (digit <= 9)
 	{
-		putchar(digit + '0');
+		putchar(digit + 48);
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		digit++;
-	}
-	while (ch <= 'f')
-	{
-		putchar(ch);
-		ch++;
 	}
 	putchar('\n');
 	return (0);
