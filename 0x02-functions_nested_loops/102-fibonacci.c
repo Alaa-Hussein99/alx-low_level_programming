@@ -14,20 +14,15 @@ int main(void)
 	printf("%ld, %ld, ", t1, t2);
 	for (i = 3; i <= 50; i++)
 	{
+		printf("%ld", next);
+		t1 = t2;
+		t2 = next;
+		next = t1 + t2;
 		if (i < 50)
-		{
-			printf("%ld, ", next);
-			t1 = t2;
-			t2 = next;
-			next = t1 + t2;
-		}
+			printf(", ");
 		else
-		{
-			t1 = t2;
-			t2 = next;
-			next = t1 + t2;
-			printf("%ld\n", next);
-		}
+			printf("\n");
+
 	}
 	return (0);
 }
