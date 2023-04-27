@@ -6,8 +6,8 @@
 */
 int main(void)
 {
-	long int t1 = 0;
-	long int t2 = 1;
+	long int f1 = 0;
+	long int f2 = 1;
 	long int next = t1 + t2;
 	long int sum = 0;
 
@@ -17,7 +17,7 @@ int main(void)
 			break;
 		if ((next % 2) == 0)
 		{
-			sum = sum + next
+			sum = sum + next;
 		}
 		f1 = f2;
 		f2 = next;
