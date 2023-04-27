@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	int t1 = 1;
-	int t2 = 2;
-	int next = t1 + t2;
+	long int t1 = 1;
+	long int t2 = 2;
+	long int next = t1 + t2;
 	int i;
 
 	printf("%d, %d, ", t1, t2);
