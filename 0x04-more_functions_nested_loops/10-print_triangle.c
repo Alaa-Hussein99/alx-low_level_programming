@@ -1,21 +1,27 @@
 #include "main.h"
 /**
- * print_triangle - prints mirrored right triangle
+ * print_triangle - prints mirrored right triangle if size > 0
+ * if size <= 0 it will print new line
  * @size: the size of the triangle
 */
 void print_triangle(int size)
 {
 	int i, j;
 
-	for (i = 0; i < size; i++)
+	if (size > 0)
 	{
-		for (j = 0; j < size; j++)
+		for (i = 0; i < size; i++)
 		{
-			if (j < (size - i - 1))
-				_putchar(' ');
-			else
-				_putchar('#');
+			for (j = 0; j < size; j++)
+			{
+				if (j < (size - i - 1))
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		printf("\n);
 }
