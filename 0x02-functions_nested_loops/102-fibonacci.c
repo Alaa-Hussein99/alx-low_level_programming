@@ -16,17 +16,17 @@ int main(void)
 	{
 		if (i < 50)
 		{
-			printf("%d, ", next);
+			printf("%ld, ", next);
 			t1 = t2;
 			t2 = next;
 			next = t1 + t2;
 		}
-		else 
+		else
 		{
 			t1 = t2;
 			t2 = next;
-			next = t1 + t2;	
-			printf("%d\n", next);
+			next = t1 + t2;
+			printf("%ld\n", next);
 		}
 	}
 	return (0);
