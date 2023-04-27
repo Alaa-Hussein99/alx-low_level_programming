@@ -19,7 +19,6 @@ void times_table(void)
 			else
 				_putchar((t / 10) + 48);
 			_putchar((t % 10) + 48);
-			}
 		}
 			_putchar('\n');
 	}
