@@ -32,7 +32,7 @@ int main(void)
 		if (f1H2 + f2H2 > 9999999999)
 		{
 			half1 += 1;
-			half2 %= max
+			half2 %= max;
 		}
 		printf("%lu%lu", half1, half2);
 		if (i != 98)
