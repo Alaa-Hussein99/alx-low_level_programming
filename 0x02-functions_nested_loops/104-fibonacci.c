@@ -22,7 +22,7 @@ int main(void)
 	}
 
 	f1H1 = f1 / max;
-	f2H1= f2 / max;
+	f2H1 = f2 / max;
 	f1H2 = f1 % max;
 	f2H2 = f2 % max;
 	for (i = 93; i < 99; i++)
