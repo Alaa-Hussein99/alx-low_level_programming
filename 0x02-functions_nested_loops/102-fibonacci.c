@@ -11,7 +11,7 @@ int main(void)
 	long int next = t1 + t2;
 	int i;
 
-	printf("%d, %d, ", t1, t2);
+	printf("%ld, %ld, ", t1, t2);
 	for (i = 3; i <= 50; i++)
 	{
 		if (i < 50)
