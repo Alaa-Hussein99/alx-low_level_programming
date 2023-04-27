@@ -25,7 +25,7 @@ int main(void)
 	f2H2 = f2 / max;
 	f1H2 = f1 % max;
 	f2H2 = f2 % max;
-	for (i = 93; i < 98; i++)
+	for (i = 93; i < 99; i++)
 	{
 		half1 = f1H1 + f2H1;
 		half2 = f1H2 + f2H2;
