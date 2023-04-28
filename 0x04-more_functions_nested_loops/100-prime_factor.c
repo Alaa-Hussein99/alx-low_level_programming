@@ -31,8 +31,11 @@ int largest_pf(long int num)
 		num = num / 2;
 	for (prime = 3; prime <= _sqrt(num); prime += 2)
 	{
-		num = num / prime;
-		largest = prime;
+		while (num % prime == 0)
+		{
+			num = num / prime;
+			largest = prime;
+		}
 	}
 	if (num > 2)
 		largest = num;
