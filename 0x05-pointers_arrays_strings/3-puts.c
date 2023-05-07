@@ -9,5 +9,5 @@ void _puts(char *str)
 	int n;
 
 	n = _strlen(str);
-	write(1, *str, n);
+	write(1, str, n);
 }
