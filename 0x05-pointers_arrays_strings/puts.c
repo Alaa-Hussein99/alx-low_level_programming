@@ -1,15 +1,13 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * _puts - takes str and prints it
  * @str: the i/p string
 */
 void _puts(char *str)
 {
-	int n, i;
+	int n;
 
-	while (str[n] != '\0')
-		n++;
-	for (i = 0; i <= n; i++)
-		_putchar(str[i]);
-	_putchar('\n');
+	n = _strlen(str);
+	write(1, str, n);
 }
