@@ -7,11 +7,11 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int *e = &array + size - 1;
+	unsigned int i;
 
 	if (array && size && action)
 	{
-		while (array <= e)
-			action(*array++);
+		for (i = 0; i < size; i ++)
+			action(array[i]);
 	}
 }
