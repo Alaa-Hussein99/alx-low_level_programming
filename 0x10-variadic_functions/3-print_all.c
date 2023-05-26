@@ -1,4 +1,4 @@
-#include "variadic_functions.c"
+#include "variadic_functions.h"
 /**
  * form_char - format char
  * @separator: given separator
@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(arg, format);
-	while (format && format(i))
+	while (format && format[i])
 	{
 		j = 0;
 		while (tokens[j].token)
