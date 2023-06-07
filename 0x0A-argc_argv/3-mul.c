@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ * @argc: int
+ * @argv: int
+ * Return: 0 succes. 1 otherwise
+*/
+int main(int argc, char *argv[])
+{
+	int sum;
+
+	if (argc == 3)
+	{
+		sum = atoi(argv[i] * atoi(argv[2]);
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+	return (0);
+}
